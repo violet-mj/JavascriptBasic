@@ -98,6 +98,21 @@ a.length; // 배열의 개수를 한참 뛰어넘은 공간에 할당할 경우 
 
 ** [Symbol.iterable]이 있는 타입에서만 사용가능하다.
 
+> variable declartive
+
+변수 선언은 3가지 키워드로 가능하다. `let`, `const`, `var`
+
+이 3가지 키워드의 차이 `let`, `const`는 block scope이며, `var`는 함수 스코프입니다.
+또한 `let`은 변수의 값을 바꿀 수 있지만, `const`는 변수의 값을 바꿀 수 없는 상수입니다.
+
+즉, block scope를 가진 키워드는 블록을 만날 때마다 새로운 lexical Environment를 생성한다. 
+또한 var은 object environment record를 참조하므로 window객체에서 접근할 수 있지만, `let`, `const`는 declarative environment record에 기록되므로 window객체에서 접근할 수 없다.
+
+
+
+### -> Execution Context는 lexical Environment를 참고할 뿐이다. 
+
+
 
 
 
